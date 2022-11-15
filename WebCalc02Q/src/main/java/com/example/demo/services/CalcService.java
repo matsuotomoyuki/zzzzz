@@ -21,6 +21,38 @@ public class CalcService {
 		return AdResult;
 
 	}
+	public String calculateSub(String NumA, String NumB) {
+		// TODO 自動生成されたメソッド・スタブ
+		
+		BigDecimal AdA=new BigDecimal(NumA);
+		BigDecimal AdB=new BigDecimal(NumB);
+		BigDecimal AdR=AdA.subtract(AdB);
+		String AdResult=AdR.toString();
+		return AdResult;
+	}
+public String calculateMlt(String NumA,String NumB) {
+		
+		BigDecimal AdA=new BigDecimal(NumA);
+		BigDecimal AdB=new BigDecimal(NumB);
+		BigDecimal AdR=AdA.multiply(AdB);
+		String AdResult=AdR.toString();
+		return AdResult;
+	}
+public String calculateDIV(String NumA,String NumB) {
+	BigDecimal AdA=new BigDecimal(NumA);
+	BigDecimal AdB=new BigDecimal(NumB);
+	try {
+		
+		BigDecimal AdR=AdA.divide(AdB);
+		String AdResult=AdR.toString();
+		return AdResult;
+	}catch (Exception e) {
+		return"無限少数の答えになりました";
+	}
+	
+}
+	
+
 
 	//		割り算に関しては特殊なので注意
 	//		
