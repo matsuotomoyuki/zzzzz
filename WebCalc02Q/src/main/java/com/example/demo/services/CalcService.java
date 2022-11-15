@@ -30,6 +30,15 @@ public class CalcService {
 		String AdResult=AdR.toString();
 		return AdResult;
 	}
+public String calculateMlt(String NumA,String NumB) {
+		
+		BigDecimal AdA=new BigDecimal(NumA);
+		BigDecimal AdB=new BigDecimal(NumB);
+		BigDecimal AdR=AdA.multiply(AdB);
+		String AdResult=AdR.toString();
+		return AdResult;
+	}
+	
 
 
 	//		割り算に関しては特殊なので注意
