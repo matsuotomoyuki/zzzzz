@@ -38,6 +38,19 @@ public String calculateMlt(String NumA,String NumB) {
 		String AdResult=AdR.toString();
 		return AdResult;
 	}
+public String calculateDIV(String NumA,String NumB) {
+	BigDecimal AdA=new BigDecimal(NumA);
+	BigDecimal AdB=new BigDecimal(NumB);
+	try {
+		
+		BigDecimal AdR=AdA.divide(AdB);
+		String AdResult=AdR.toString();
+		return AdResult;
+	}catch (Exception e) {
+		return"無限少数の答えになりました";
+	}
+	
+}
 	
 
 
